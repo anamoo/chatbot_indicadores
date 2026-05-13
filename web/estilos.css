@@ -1,0 +1,132 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    background: #6A0F1B;
+    color: white;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* LOGO */
+.logo {
+    width: 60px;
+    height: 60;
+    margin-right: 10px;
+}
+
+/* TITULO */
+.titulo h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.titulo h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* CONTENEDOR GENERAL */
+.chat-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* CHAT */
+#chat {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    background: #f5f5f5;
+    margin-bottom: 140px;
+}
+
+/* MENSAJES USUARIO */
+.mensaje-usuario {
+    background: #6A0F1B;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: right;
+    max-width: 70%;
+    margin-left: auto;
+}
+
+/* MENSAJES BOT */
+.mensaje-bot {
+    background: white;
+    color: #333;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: left;
+    max-width: 70%;
+    white-space: pre-line;
+    border: 1px solid #ddd;
+}
+
+/* INPUT FIJO */
+.input-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    background: white;
+    border-top: 2px solid #6A0F1B;
+}
+
+/* INPUT */
+#mensaje {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* BOTÓN ENVIAR */
+button {
+    padding: 10px;
+    margin-left: 5px;
+    border: none;
+    background: #6A0F1B;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* HOVER BOTÓN */
+button:hover {
+    background: #4A0B13;
+}
+
+/* SUGERENCIAS */
+.sugerencias {
+    position: fixed;
+    bottom: 60px;
+    width: 100%;
+    background: #eee;
+    padding: 5px;
+    text-align: center;
+}
+
+.sugerencias button {
+    margin: 3px;
+    background: #ffffff;
+    color: #6A0F1B;
+    border: 1px solid #6A0F1B;
+}
+
+.sugerencias button:hover {
+    background: #6A0F1B;
+    color: white;
+}

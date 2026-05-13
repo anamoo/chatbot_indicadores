@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chatbot Indicadores Institucionales</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="logoch.png" class="logo">
+        <div class="titulo">
+            <h1>Instituto Tecnologico de Durango - TecnoBot</h1>
+            <h2>TecnoBot - Indicadores Institucionales</h2>
+        </div>
+    </div>
+
+    <div class="chat-wrapper">
+
+        
+        <div id="chat"></div>
+
+        <!-- INPUT -->
+        <div class="input-container">
+            <input type="text" id="mensaje" placeholder="Escribe tu pregunta">
+            <button onclick="enviar()">Enviar</button>
+        </div>
+
+        <!-- 🔘 BOTONES SUGERIDOS -->
+        <div class="sugerencias">
+            <button onclick="enviarSugerido('Matricula')">Matricula</button>
+            <button onclick="enviarSugerido('Egresados')">Egresados</button>
+            <button onclick="enviarSugerido('Titulados')">Titulados</button>
+            <button onclick="enviarSugerido('Docentes')">Docentes</button>
+            <button onclick="enviarSugerido('Administrativos')">Administrativos</button>
+            <button onclick="enviarSugerido('Comparar matricula')">Comparar matricula</button>
+            <button onclick="enviarSugerido('Edificio')">Edificios</button>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chat.js"></script>
+
+</body>
+
+</html>
