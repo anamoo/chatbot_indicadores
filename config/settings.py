@@ -1,2 +1,2 @@
-BASE_URL = "http://127.0.0.1:8001/indicadores"
+BASE_URL = "https://chatbot-indicadores.onrender.com/indicadores"
 TIMEOUT = 5
