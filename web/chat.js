@@ -16,6 +16,7 @@ async function enviar(textoManual = null){
 
         let response = await fetch("https://chatbot-indicadores.onrender.com/chat",{
             method:"POST",
+            mode: "cors",
             headers:{
                 "Content-Type":"application/json"
             },
