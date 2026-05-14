@@ -4,11 +4,6 @@ from bot import procesar_mensaje
 
 app = FastAPI()
 
-origins = [
-    "http://127.0.0.1:5500",
-    "http://localhost:5500"
-]
-
 # permitir conexión con la página web
 app.add_middleware(
     CORSMiddleware,
