@@ -16,7 +16,9 @@ def generar_respuesta(intent, data):
             f"•Tiempo completo: {data.get('tiempo_completo')}.\n"
             f"•3/4 de Tiempo: {data.get('tres_cuartos_tiempo')}.\n"
             f"•1/2 Tiempo: {data.get('medio_tiempo')}.\n"
-            f"•Horas asignatura: {data.get('horas_asignatura')}."
+            f"•Horas asignatura: {data.get('horas_asignatura')}.\n\n"
+            f"🏫 Total de Docentes Institucional en este periodo: "
+            f"👨‍🏫 {data.get('total_institucional')} docentes.\n\n"
         }
     
     if intent == "administrativos_consulta":

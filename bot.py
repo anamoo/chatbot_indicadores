@@ -68,7 +68,7 @@ def procesar_mensaje(texto):
     data = llamar_backend(intent, entities)
 
     if data is None:
-        return {"respuesta": "No se pudo obtener información del servidor"}
+        return {"respuesta": "No se pudo obtener información, contactar al DEPARTAMENTO DE PLANEACIÓN."}
 
     #print("RESPUESTA BACKEND:", data)
 
