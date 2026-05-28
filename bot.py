@@ -26,7 +26,7 @@ def procesar_mensaje(texto):
 
             if data is None:
                 contexto_actual = None
-                return {"respuesta": "No se pudo obtener información del servidor"}
+                return {"respuesta": "No se pudo obtener información, contactar al DEPARTAMENTO DE PLANEACIÓN."}
             
             respuesta = generar_respuesta(intent, data)
 
