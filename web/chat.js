@@ -77,6 +77,59 @@ function enviarSugerido(texto){
     }, 50)
 }
 
+/* =========================================
+   🚀 SALUDO AUTOMÁTICO AL CARGAR
+========================================= */
+
+window.onload = function () {
+
+    enviarSaludo()
+
+}
+
+
+async function enviarSaludo(){
+
+    let chat = document.getElementById("chat")
+
+    try{
+
+        let response = await fetch(
+            "https://chatbot-indicadores.onrender.com/chat",
+            {
+                method:"POST",
+                mode:"cors",
+                headers:{
+                    "Content-Type":"application/json"
+                },
+                body: JSON.stringify({
+                    texto:"hola"
+                })
+            }
+        )
+
+        let data = await response.json()
+
+        chat.innerHTML += `
+            <div class="mensaje-bot">
+                ${data.respuesta}
+            </div>
+        `
+
+        chat.scrollTop = chat.scrollHeight
+
+    }catch(error){
+
+        console.error(error)
+
+        chat.innerHTML += `
+            <div class="mensaje-bot">
+                No se pudo cargar el saludo inicial
+            </div>
+        `
+    }
+}
+
 document.getElementById("mensaje").addEventListener("keypress", function(e){
     if (e.key === "Enter"){
         enviar()
